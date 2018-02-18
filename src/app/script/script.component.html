@@ -1,3 +1,22 @@
-<p>
-  script works!
-</p>
+<!-- <h2>Text #: {{ script.id | uppercase }}</h2>
+<div>
+	<span>id: </span>
+	{{script.id}}
+</div>
+<div>
+	<span>content: </span>
+	{{script.content}}
+</div> -->
+<h2> Play Script - Body </h2>
+<ul class = "macbeth"> 
+	<li *ngFor="let script of macbeth" ><!-- *ngFor as repeater to display all elements in the host element-->
+		<!-- <span class = "badge">{{script.id}}</span>  -->
+		{{script.content}}
+	</li>
+</ul>
+
+<!-- <div>
+	<label>Text Content:
+		<input [(ngModel)]= "script.content" placeholder = "content">
+	</label>
+</div> -->
